@@ -1,5 +1,4 @@
-import React from 'react'
-import { LayoutDashboard, Users, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, Users, Image as ImageIcon, Settings, LogOut } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Layout({ children }) {
@@ -8,6 +7,7 @@ export default function Layout({ children }) {
   const navItems = [
     { icon: LayoutDashboard, label: 'Dashboard', path: '/' },
     { icon: Users, label: 'Leads', path: '/leads' },
+    { icon: ImageIcon, label: 'Gallery', path: '/gallery' },
     { icon: Settings, label: 'Settings', path: '/settings' },
   ]
 
